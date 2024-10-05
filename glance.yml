@@ -1,0 +1,188 @@
+pages:
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Europe/Paris
+                label: Paris
+              - timezone: America/New_York
+                label: New York
+
+          - type: calendar
+
+          - type: rss
+            limit: 10
+            collapse-after: 3
+            cache: 3h
+            feeds:
+              - url: https://hackernoon.com/feed
+              - title: HackerNoon
+              - url: https://thehackernews.com/feeds/posts/default
+              - title: TheHackerNews
+              - url: https://www.globalsecuritymag.fr/spip.php?page=backend
+              - title: GlobalSecurityMag
+              - url: https://www.zdnet.fr/feeds/rss
+              - title: ZDNet
+              - url: https://www.csoonline.com/feed/
+              - title: csoonline
+              - url: https://www.darkreading.com/rss/all.xml
+              - title: darkreading
+
+      - size: full
+        widgets:
+          - type: search
+            search-engine: duckduckgo
+            new-tab: true
+            bangs:
+              - title: YouTube
+                shortcut: "!yt"
+                url: https://www.youtube.com/results?search_query={QUERY}
+              - title: Google
+                shortcut: "!gl"
+                url: https://www.google.com/search?q={QUERY}
+
+          - type: videos
+            channels:
+              - UCP7WmQ_U4GB3K51Od9QvM0w # David Bombal
+              - UCZTIRrENWr_rjVoA7BcUE_A # David Bombal Tech
+              - UC9x0AN7BWHpCDHSm9NiJFJQ # NetworkChuck
+              - UCFbNIlppjAuEX4znoulh0Cw # Web Dev Simplified
+
+          - type: bookmarks
+            groups:
+              - title: General
+                links:
+                  - title: Gmail
+                    icon: si:gmail
+                    url: https://mail.google.com/mail/u/0/
+                  - title: Github
+                    icon: si:github
+                    url: https://github.com/
+              - title: Entertainment
+                color: 10 70 50
+                links:
+                  - title: YouTube
+                    icon: si:youtube
+                    url: https://www.youtube.com/
+                  - title: Prime Video
+                    icon: si:prime
+                    url: https://www.primevideo.com/
+                  - title: DarkiWorld
+                    url: https://www.darkiworld.com/
+                  - title: Wawacity
+                    url: https://www.wawacity.cfd/
+              - title: Shopping
+                color: 43 100 50
+                links:
+                  - title: Amazon
+                    icon: si:amazon
+                    url: https://www.amazon.fr/
+                  - title: LDLC
+                    icon: si:pcgamingwiki
+                    url: https://www.ldlc.com/
+                  - title: Top Achat
+                    icon: si:pcgamingwiki
+                    url: https://www.topachat.com/accueil/index.php
+                  - title: Etsy
+                    icon: si:etsy
+                    url: https://www.etsy.com/
+                  - title: Eneba
+                    icon: si:applearcade
+                    url: https://www.eneba.com/fr/
+              - title: Social
+                color: 200 50 50
+                links:
+                  - title: LinkedIn
+                    icon: si:linkedin
+                    url: https://www.linkedin.com/in/achot-barseghyan-50b9a5179/
+
+      - size: small
+        widgets:
+          - type: weather
+            location: Sennecey-Le-Grand, France
+          - type: weather
+            location: Chalon-Sur-Saône, France
+          - type: weather
+            location: Lyon, France
+
+  - name: RSS
+    columns:
+      - size: full
+        widgets:
+          - type: rss
+            style: detailed-list
+            limit: 1000
+            cache: 1d
+            feeds:
+              - url: https://hackernoon.com/feed
+              - title: HackerNoon
+              - url: https://thehackernews.com/feeds/posts/default
+              - title: TheHackerNews
+              - url: https://www.globalsecuritymag.fr/spip.php?page=backend
+              - title: GlobalSecurityMag
+              - url: https://www.zdnet.fr/feeds/rss
+              - title: ZDNet
+              - url: https://www.csoonline.com/feed/
+              - title: csoonline
+              - url: https://www.darkreading.com/rss/all.xml
+              - title: darkreading
+
+  - name: Gaming
+    columns:
+      - size: small
+        widgets:
+          - type: twitch-channels
+            channels:
+              - ZeratoR
+              - Berlu
+              - mistermv
+              - joueur_du_grenier
+              - mynthos
+              - alphacast
+              - Lydia_am
+              - Pressea
+
+      - size: full
+        widgets:
+          - type: group
+            widgets:
+              - type: reddit
+                show-thumbnails: true
+                subreddit: pcgaming
+              - type: reddit
+                subreddit: games
+
+          - type: videos
+            style: grid-cards
+            collapse-after-rows: 3
+            channels:
+              - UClPtBcWVxgSyX7x7lHI1kcg # Mapocolops
+              - UCLgTiOy-aiE3l8VBrPQMmTg # Eralia
+              - UCmdDXp6Yy4VXqp5JCbUrtnA # LizXP
+              - UCido8YLqi8rnvLrpwl9C9uA # Berlu
+              - UCClc972nxK3t9y9J14XjNaw # Krissy Plays
+              - UC-2Y8dQb0S6DtpxNgAKoJKA # Playstation
+              - UCZ_oIYI9ZNpOfWbpZxWNuRQ # Zerator
+
+      - size: small
+        widgets:
+          - type: reddit
+            subreddit: gamingnews
+            limit: 7
+            style: vertical-cards
+
+  - name: Monitor
+    columns:
+      - size: full
+        widgets:
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: Grafana VPS
+                url: http://91.214.190.245:3000/
+                icon: si:grafana
+
