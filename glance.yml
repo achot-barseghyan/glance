@@ -185,4 +185,7 @@ pages:
               - title: PDF
                 url: https://pdf.achot-barseghyan.fr/
                 icon: si:files
+              - title: Grafana
+                url: https://grafana.achot-barseghyan.fr/
+                icon: si:grafana
 
