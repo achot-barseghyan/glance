@@ -188,4 +188,7 @@ pages:
               - title: Grafana
                 url: https://grafana.achot-barseghyan.fr/
                 icon: si:grafana
+              - title: RSS Feed
+                url: https://rss.achot-barseghyan.fr/
+                icon: si:rss
 
