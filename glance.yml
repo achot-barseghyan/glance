@@ -182,7 +182,7 @@ pages:
             cache: 1m
             title: Services
             sites:
-              - title: Grafana VPS
-                url: http://91.214.190.245:3000/
-                icon: si:grafana
+              - title: PDF
+                url: https://pdf.achot-barseghyan.fr/
+                icon: si:files
 
