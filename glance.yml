@@ -70,10 +70,6 @@ pages:
                   - title: Prime Video
                     icon: si:prime
                     url: https://www.primevideo.com/
-                  - title: DarkiWorld
-                    url: https://www.darkiworld.com/
-                  - title: Wawacity
-                    url: https://www.wawacity.cfd/
               - title: Shopping
                 color: 43 100 50
                 links:
@@ -98,6 +94,21 @@ pages:
                   - title: LinkedIn
                     icon: si:linkedin
                     url: https://www.linkedin.com/in/achot-barseghyan-50b9a5179/
+              - title: Services
+                color: 200 50 50
+                links:
+                  - title: RSS Feed
+                    icon: si:rss
+                    url: https://rss.achot-barseghyan.fr
+                  - title: Stirling PDF
+                    icon: si:files
+                    url: https://pdf.achot-barseghyan.fr
+                  - title: Jelu Books
+                    icon: si:bookstack
+                    url: https://books.achot-barseghyan.fr
+                  - title: Grafana
+                    icon: si:grafana
+                    url: https://grafana.achot-barseghyan.fr
 
       - size: small
         widgets:
@@ -191,4 +202,7 @@ pages:
               - title: RSS Feed
                 url: https://rss.achot-barseghyan.fr/
                 icon: si:rss
+              - title: Books Tracking
+                url: https://books.achot-barseghyan.fr/
+                icon: si:bookstack
 
